@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="stylesheet" rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="input">
+        <button onclick="switchCss()" id="toggleBtn">LM</button>
+        <script>
+        </script>
+        <div id="buttons">
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">+</button>
+
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">-</button>
+
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator">x</button>
+
+            <button class="number">0</button>
+            <button class="clear">C</button>
+            <button class="equal">=</button>
+            <button class="operator">/</button>
+        </div>
+    </div>
+    <script>
+        const input = document.getElementById('input');
+        const buttons = document.getElementById('buttons');
+
+        buttons.addEventListener('click', function (event) {
+            const button = event.target;
+
+            if (button.classList.contains('clear')) {
+                input.value = '';
+                return;
+            }
+
+            if (button.classList.contains('equal')) {
+                try {
+                    input.value = calculate(input.value);
+                } catch (e) {
+                    input.value = 'Invalid expression';
+                }
+                return;
+            }
+
+            input.value += button.textContent;
+        });
+
+        input.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                try {
+                    input.value = calculate(input.value);
+                } catch (e) {
+                    input.value = 'Invalid expression';
+                }
+            }
+        });
+
+        function calculate(expression) {
+            expression = expression.replace(/x/g, '*');
+            const regex = /[^-()\d/*+.]/g;
+            if (regex.test(expression)) {
+                throw new Error('Invalid characters in expression');
+            }
+            const fn = new Function(`return ${expression}`);
+            return fn();
+        }
+    </script>
+</body>
+
+</html>
