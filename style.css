@@ -17,6 +17,8 @@ input {
     font-family: 'Shantell Sans', cursive;
     font-size: x-large;
     background-color: #c7c5c5;
+    padding-left: 1%;
+    padding-right 1%;
     border: black solid 2px;
     border-radius: 20px;
     width: 90%;
