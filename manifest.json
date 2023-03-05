@@ -28,5 +28,12 @@
       "url": "/Calculator/",
       "description": "Opens Another Tab"
     }
-  ]
+  ],
+  "description": "A Small Simple Calculator",
+  "scope": "darklife12354.github.io/Calculator",
+  "lang": "en",
+  "display_override": [
+    "standalone"
+  ],
+  "prefer_related_applications": false
 }
