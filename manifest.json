@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "https://darklife12354.github.io/Calculator/",
+  "start_url": "/Calculator/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000"
