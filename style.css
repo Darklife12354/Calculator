@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
-
 body {
     height: 100%;
     width: 100%;
 }
-
 input {
     box-sizing: border-box
 }
-
 .calculator {
     position: absolute;
     top: 0%;
@@ -16,43 +13,41 @@ input {
     height: 100%;
     width: 100%
 }
-
 .calculator input {
     font-family: 'Shantell Sans', cursive;
     font-size: x-large;
     background-color: #c7c5c5;
+    border: black solid 2px;
+    border-radius: 20px;
     width: 90%;
     height: 8%;
 }
-
 #toggleBtn {
     font-family: 'Shantell Sans', cursive;
-    font-size: x-large;
+    font-size: 2.0vw;
     float: right;
     background-color: white;
     border: black solid 2px;
+    border-radius: 20px;
     width: 10%;
     height: 8%;
 }
-
 #toggleBtn:hover {
     background-color: #d1d1d1;
 }
-
 #buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 92%;
 }
-
 #buttons button {
     font-family: 'Shantell Sans', cursive;
     font-size: x-large;
     background-color: white;
     border: black solid 2px;
+    border-radius: 20px;
     height: 100%;
 }
-
 #buttons button:hover {
     background-color: #d1d1d1;
 }

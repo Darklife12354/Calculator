@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
 
 body {
-    height: 100%;
-    width: 100%;
+    background-color: #3a255e;
 }
 
 input {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .calculator {
@@ -22,6 +21,7 @@ input {
     font-size: x-large;
     background-color: #2f2247;
     border: #4a2a82 solid 2px;
+    border-radius: 20px;
     color: white;
     width: 90%;
     height: 8%;
@@ -29,11 +29,12 @@ input {
 
 #toggleBtn {
     font-family: 'Shantell Sans', cursive;
-    font-size: x-large;
+    font-size: 2.0vw;
     float: right;
     background-color: #251542;
     color: white;
     border: #4a2a82 solid 2px;
+    border-radius: 20px;
     width: 10%;
     height: 8%;
 }
@@ -54,6 +55,7 @@ input {
     background-color: #251542;
     color: white;
     border: #4a2a82 solid 2px;
+    border-radius: 20px;
     height: 100%;
 }
 
