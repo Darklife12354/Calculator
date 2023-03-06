@@ -21,9 +21,9 @@ input {
     font-size: x-large;
     background-color: #2f2247;
     border: #4a2a82 solid 2px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: white;
-    width: 90%;
+    width: ;
     height: 8%;
 }
 
@@ -34,7 +34,7 @@ input {
     background-color: #251542;
     color: white;
     border: #4a2a82 solid 2px;
-    border-radius: 20px;
+    border-radius:20px;
     width: 10%;
     height: 8%;
 }
@@ -55,7 +55,7 @@ input {
     background-color: #251542;
     color: white;
     border: #4a2a82 solid 2px;
-    border-radius: 15px;
+    border-radius: 20px;
     height: 100%;
 }
 
