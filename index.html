@@ -49,34 +49,6 @@
         </div>
     </div>
     <script>
-        const input = document.getElementById("input");
-        const buttons = document.getElementById("buttons");
-        let operatorPressed = false;
-
-        buttons.addEventListener("click", event => {
-            const target = event.target;
-            const value = target.innerText;
-
-            if (target.classList.contains("number")) {
-                input.value += value;
-                operatorPressed = false;
-            } else if (target.classList.contains("operator")) {
-                if (!operatorPressed) {
-                    input.value += value;
-                    operatorPressed = true;
-                }
-            } else if (target.classList.contains("equal")) {
-                input.value = eval(input.value);
-                operatorPressed = false;
-            } else if (target.classList.contains("clear")) {
-                input.value = "";
-                operatorPressed = false;
-            }
-        });
-
-        function switchCss() {
-            document.documentElement.classList.toggle("dark");
-        }
 
     </script>
 </body>
