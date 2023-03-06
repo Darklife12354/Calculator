@@ -16,5 +16,23 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000"
+  "theme_color": "#000000",
+  "description": "A small simple calculator",
+  "dir": "auto",
+  "lang": "en",
+  "orientation": "any",
+  "scope": "/Calculator/",
+  "display_override": [
+    "standalone"
+  ],
+  "shortcuts": [
+    {
+      "name": "Open New Tab",
+      "url": "/Calculator/",
+      "description": "Opens a new page"
+    }
+  ],
+  "categories": [
+    "utilities"
+  ]
 }
